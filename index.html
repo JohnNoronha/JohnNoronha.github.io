@@ -1,1 +1,917 @@
-<h1> Hola </h1>
+<!DOCTYPE html>
+<html lang="en" class="no-js" >
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>João Noronha Portfolio</title>
+
+    <script>
+        document.documentElement.classList.remove('no-js');
+        document.documentElement.classList.add('js');
+    </script>
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+
+</head>
+
+<body id="top">
+
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader">
+        </div>
+    </div>
+
+
+    <!-- page wrap
+    ================================================== -->
+    <div class="s-pagewrap">
+
+
+
+        <!-- # site header
+    ================================================== -->
+        <header class="s-header">
+
+            <div class="s-header__block">
+                <div class="s-header__logo">
+                    <a class="logo" href="index.html">
+                        <img src="images/JNlogo.png" width="34" height="34" alt="Homepage">
+                    </a>
+                </div>
+
+                <a class="s-header__menu-toggle" href="#0"><span>Menu</span></a>
+            </div> <!-- end s-header__block -->
+
+            <div class="row s-header__nav-wrap">
+                <nav class="s-header__nav">
+                    <ul>
+                        <li class="current"><a href="#intro" class="smoothscroll">Intro</a></li>
+                        <li><a href="#works" class="smoothscroll">Portfolio</a></li>
+                        <li><a href="#services" class="smoothscroll">Services & CV</a></li>
+                        <li><a href="#contact" class="smoothscroll">Get In Touch</a></li>
+                    </ul>
+                </nav>
+
+                <ul class="s-header__social">
+                    <li>
+                        <a href="https://www.behance.net/joonoronha6">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M22 7h-7v-2h7v2zm1.726 10c-.442 1.297-2.029 3-5.101 3-3.074 0-5.564-1.729-5.564-5.675 0-3.91 2.325-5.92 5.466-5.92 3.082 0 4.964 1.782 5.375 4.426.078.506.109 1.188.095 2.14h-8.027c.13 3.211 3.483 3.312 4.588 2.029h3.168zm-7.686-4h4.965c-.105-1.547-1.136-2.219-2.477-2.219-1.466 0-2.277.768-2.488 2.219zm-9.574 6.988h-6.466v-14.967h6.953c5.476.081 5.58 5.444 2.72 6.906 3.461 1.26 3.577 8.061-3.207 8.061zm-3.466-8.988h3.584c2.508 0 2.906-3-.312-3h-3.272v3zm3.391 3h-3.391v3.016h3.341c3.055 0 2.868-3.016.05-3.016z" /></svg>                            <span class="screen-reader-text">Facebook</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/@joaonoronhabarros">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a2.997 2.997 0 0 0-2.112-2.12C19.608 3.5 12 3.5 12 3.5s-7.608 0-9.386.566a2.997 2.997 0 0 0-2.112 2.12A31.53 31.53 0 0 0 0 12a31.53 31.53 0 0 0 .502 5.814 2.997 2.997 0 0 0 2.112 2.12c1.778.566 9.386.566 9.386.566s7.608 0 9.386-.566a2.997 2.997 0 0 0 2.112-2.12A31.53 31.53 0 0 0 24 12a31.53 31.53 0 0 0-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" /></svg>
+                            <span class="screen-reader-text">Twitter</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/oldschoolcartoon.noronha/">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:"><path d="M11.999,7.377c-2.554,0-4.623,2.07-4.623,4.623c0,2.554,2.069,4.624,4.623,4.624c2.552,0,4.623-2.07,4.623-4.624 C16.622,9.447,14.551,7.377,11.999,7.377L11.999,7.377z M11.999,15.004c-1.659,0-3.004-1.345-3.004-3.003 c0-1.659,1.345-3.003,3.004-3.003s3.002,1.344,3.002,3.003C15.001,13.659,13.658,15.004,11.999,15.004L11.999,15.004z"></path><circle cx="16.806" cy="7.207" r="1.078"></circle><path d="M20.533,6.111c-0.469-1.209-1.424-2.165-2.633-2.632c-0.699-0.263-1.438-0.404-2.186-0.42 c-0.963-0.042-1.268-0.054-3.71-0.054s-2.755,0-3.71,0.054C7.548,3.074,6.809,3.215,6.11,3.479C4.9,3.946,3.945,4.902,3.477,6.111 c-0.263,0.7-0.404,1.438-0.419,2.186c-0.043,0.962-0.056,1.267-0.056,3.71c0,2.442,0,2.753,0.056,3.71 c0.015,0.748,0.156,1.486,0.419,2.187c0.469,1.208,1.424,2.164,2.634,2.632c0.696,0.272,1.435,0.426,2.185,0.45 c0.963,0.042,1.268,0.055,3.71,0.055s2.755,0,3.71-0.055c0.747-0.015,1.486-0.157,2.186-0.419c1.209-0.469,2.164-1.424,2.633-2.633 c0.263-0.7,0.404-1.438,0.419-2.186c0.043-0.962,0.056-1.267,0.056-3.71s0-2.753-0.056-3.71C20.941,7.57,20.801,6.819,20.533,6.111z M19.315,15.643c-0.007,0.576-0.111,1.147-0.311,1.688c-0.305,0.787-0.926,1.409-1.712,1.711c-0.535,0.199-1.099,0.303-1.67,0.311 c-0.95,0.044-1.218,0.055-3.654,0.055c-2.438,0-2.687,0-3.655-0.055c-0.569-0.007-1.135-0.112-1.669-0.311 c-0.789-0.301-1.414-0.923-1.719-1.711c-0.196-0.534-0.302-1.099-0.311-1.669c-0.043-0.95-0.053-1.218-0.053-3.654 c0-2.437,0-2.686,0.053-3.655c0.007-0.576,0.111-1.146,0.311-1.687c0.305-0.789,0.93-1.41,1.719-1.712 c0.534-0.198,1.1-0.303,1.669-0.311c0.951-0.043,1.218-0.055,3.655-0.055c2.437,0,2.687,0,3.654,0.055 c0.571,0.007,1.135,0.112,1.67,0.311c0.786,0.303,1.407,0.925,1.712,1.712c0.196,0.534,0.302,1.099,0.311,1.669 c0.043,0.951,0.054,1.218,0.054,3.655c0,2.436,0,2.698-0.043,3.654H19.315z"></path></svg>
+                            <span class="screen-reader-text">Instagram</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/joaonoronhabarros/">
+                            <svg <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.27c-.97 0-1.75-.79-1.75-1.76s.78-1.75 1.75-1.75 1.75.78 1.75 1.75-.78 1.76-1.75 1.76zm13.5 11.27h-3v-5.6c0-1.34-.03-3.07-1.87-3.07-1.87 0-2.16 1.46-2.16 2.96v5.71h-3v-10h2.88v1.36h.04c.4-.76 1.38-1.55 2.84-1.55 3.04 0 3.6 2 3.6 4.59v5.6z"</svg>
+                            <span class="screen-reader-text">Dribbble</span>
+                        </a>
+                    </li>
+                </ul>
+            </div> <!-- end s-header__nav-wrap -->
+
+        </header> <!-- end s-header -->
+        <!-- # intro
+    ================================================== -->
+        <div class="video-block" style="margin-top:70px">
+            <span class="video-block__bg-left"></span>
+            <span class="video-block__bg-right"></span>
+
+            <div class="video-block__content">
+                <a href="https://www.youtube.com/embed/JRi2hqpb90g?si=J4-G380HszipJgJf" class="video-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:"><path d="M7 6L7 18 17 12z"></path></svg>
+                </a>
+
+                <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/_3RZuhONWuY?si=ojMQQx0qInux8qEu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>-->
+
+                <p class="video-caption">
+                    Watch Video
+                </p>
+            </div>
+        </div>  <!--end video-block-->
+
+        <section id="intro" class="s-intro target-section">
+
+
+
+            <div class="row">
+                <div class="column">
+                    <div class="s-intro__top-block">
+                        <span class="s-intro__bg"></span>
+
+                        <!--<div class="video-block__content" style="margin:10px;">
+                        <a href="https://www.youtube.com/watch?v=_3RZuhONWuY" class="video-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:"><path d="M7 6L7 18 17 12z"></path></svg>
+                        </a>
+
+                        <p class="video-caption">
+                            Watch Video
+                        </p>
+                    </div>-->
+                        <!--codigo nao utilizado-->
+                        <!--<h1 class="s-intro__text">
+                        we're a creative group <br>
+                        of people who design <br>
+                        influential brands and <br>
+                        digital experiences<span>.</span>
+                    </h1>-->
+
+                        <a href="#services" class="s-intro__scroll-down smoothscroll">
+                            <span>Scroll Down</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:rotate(180deg);-ms-filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=2)"><path d="M21 11L6.414 11 11.707 5.707 10.293 4.293 2.586 12 10.293 19.707 11.707 18.293 6.414 13 21 13z"></path></svg>
+                        </a>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row row-x-center s-intro__about-wrap">
+                <div class="column s-intro__about">
+                    <h2 class="s-intro__about-title">
+                        Hi there! I am João.
+                    </h2>
+
+                    <p>
+
+
+                        I am a graphic designer, content creator, videographer and marketeer.
+
+
+                        I was born with a passion for illustration and drawing, which evolved to a passion for digital content. I also have a deep interest in Virtual Reality.
+
+                        <br><br>
+
+                        Currently based in Utrecht and working at 5CA in Utrecht as a Visual content creator.
+                        Previously worked at Pakhuis de Zwijger in Amsterdam and also in the Museum of Art, Architecture and Technology (MAAT) in Lisbon, did some freelancer content creation and worked as an art assistant for a reality show.
+
+                        <br>
+                        <br>
+
+                        Bachelor degree in Multimedia Arts at the University of Fine Arts in Lisbon.
+
+
+
+
+
+
+                    </p>
+
+                </div>
+            </div>
+
+            <!--<div class="row about-stats stats block-lg-one-fourth block-md-one-half block-mob-whole" data-animate-block>
+
+                <div class="column stats__item" data-animate-el>
+                    <div class="stats__count" data-counter=30><span>30</span>+</div>
+                    <h5>Happy Customers</h5>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit, sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim veniam.
+                    </p>
+                </div>
+                <div class="column stats__item" data-animate-el>
+                    <div class="stats__count" data-counter=35><span>35</span>+</div>
+                    <h5>Hours Work</h5>
+                    <p>
+                        Eleifend donec pretium vulputate sapien nec sagittis
+                        aliquam malesuada. Eu scelerisque felis imperdiet proin
+                        fermentum leo. Cursus turpis massa tincidunt.
+                    </p>
+                </div>
+                <div class="column stats__item" data-animate-el>
+                    <div class="stats__count" data-counter=41><span>41</span>+</div>
+                    <h5>Coffee Drinks</h5>
+                    <p>
+                        Volutpat commodo sed egestas egestas fringilla phasellus
+                        faucibus scelerisque. Est velit egestas dui id ornare.
+                        Leo urna molestie at elementum.
+                    </p>
+                </div>
+                <div class="column stats__item" data-animate-el>
+                    <div class="stats__count" data-counter=38><span>38</span>+</div>
+                    <h5>Completed Projects</h5>
+                    <p>
+                        Nulla pharetra diam sit amet nisl suscipit adipiscing
+                        bibendum est. Quis risus sed vulputate odio ut.
+                        Lectus arcu bibendum at varius vel eu facilisis.
+                    </p>
+                </div>-->
+
+            </div> <!-- end about-stats -->
+
+        </section> <!-- end s-intro -->
+        <!-- ## works
+    ================================================== -->
+    <section id="works" class="s-works target-section">
+
+        <div class="row section-header section-header--dark has-bottom-sep">
+            <div class="column lg-12">
+                <h3 class="text-pretitle">Portfolio</h3>
+                <h1 class="text-display-title">Here is some of my work. Feel free to  check them out.</h1>
+            </div>
+        </div> <!-- end section-header -->
+
+        <div class="row folio-list block-lg-one-third block-tab-one-half block-stack-on-550 collapse" data-animate-block>
+
+            <!--5CA-->
+            <div class="column">
+                <div class="folio-item" data-animate-el>
+                    <div class="folio-item__thumb">
+                        <a class="folio-item__thumb-link" href="images/portfolio/gallery/g-5ca.jpg" title="The Red Wheel" data-size="1050x700">
+                            <img src="images/portfolio/5ca.png" width="600" height="650"
+                                 srcset="images/portfolio/5ca.png 1x, images/portfolio/5ca.png 2x" alt="">
+                        </a>
+                    </div>
+                    <div class="folio-item__info">
+                        <div class="folio-item__cat">Branding</div>
+                        <h4 class="folio-item__title">5CA</h4>
+                    </div>
+                    <a href="https://5ca.com/" title="5CA Link" class="folio-item__project-link">Project Link</a>
+                    <div class="folio-item__caption">
+                        <p>
+                            At 5CA, a global leader in remote, multilingual customer experience solutions1, I contributed as a Visual Graphic Designer, bringing creativity and technical expertise to a variety of projects. My role encompassed:
+                            <br>
+                            Video Editing & Filming: Produced and edited high-quality videos for marketing campaigns, training materials, and internal communications.
+                            <br>
+                            Photography: Captured professional photographs for use in promotional materials, social media, and company events.
+                            <br>
+                            Photoshop: Utilized advanced Photoshop skills to create visually appealing graphics, retouch images, and design marketing collateral.
+                            <br>
+                            Social Media Posts: Designed engaging social media content to enhance brand presence and drive audience engagement.
+                            <br>
+                            Banners: Created eye-catching banners for online and offline use, ensuring consistency with the company’s branding.
+                            <br>
+                            Website Design: Developed and maintained user-friendly website designs, focusing on aesthetics and functionality.
+                            <br>
+                            UX/UI Design: Improved user experience and interface design for various digital platforms, enhancing usability and customer satisfaction.
+                            <br>
+                            PowerPoint Presentations: Designed impactful PowerPoint presentations for client pitches, internal meetings, and conferences..
+                        </p>
+                    </div>
+                </div>
+            </div> <!-- end column -->
+            <!--5CA People-->
+            <div class="column">
+                <div class="folio-item" data-animate-el>
+                    <div class="folio-item__thumb">
+                        <a class="folio-item__thumb-link" href="images/portfolio/gallery/g-5capeople.jpg" title="The Red Wheel" data-size="1050x700">
+                            <img src="images/portfolio/5capeople.jpg"
+                                 srcset="images/portfolio/5capeople.jpg 1x, images/portfolio/5capeople2x.jpg 2x" alt="">
+                        </a>
+                    </div>
+                    <div class="folio-item__info">
+                        <div class="folio-item__cat">Branding</div>
+                        <h4 class="folio-item__title">5CA People</h4>
+                    </div>
+                    <a href="https://people.5ca.com/" title="Project Link" class="folio-item__project-link">Project Link</a>
+                    <div class="folio-item__caption">
+                        <p>
+                            As a Visual Content Designer at 5CA, I led the design and development of the 5CA People project, a global leader in multilingual CX talent sourcing. My role encompassed designing the website, enhancing the UX/UI, and creating engaging social media posts to promote the platform.
+                            <br>
+                            Project Highlights:
+                            <br>
+                            Website Design: Crafted a modern, user-friendly website that effectively showcases 5CA People's services and capabilities. The design focuses on seamless navigation and an intuitive user experience.
+                            <br>
+                            UX/UI Design: Developed a cohesive and visually appealing user interface that enhances the overall user experience. Ensured that the design is responsive and accessible across various devices.
+                            <br>
+                            Social Media Campaigns: Created compelling social media content to promote 5CA People, highlighting its strengths in remote-first customer support and its ability to connect businesses with top-tier CX professionals.
+                            <br>
+                            5CA People is built to scale with clients' needs, allowing businesses to hire the best talent on demand, from anywhere in the world. With over 25 years of experience in remote-first customer support, 5CA People stands out as a trusted partner in the industry.
+                        </p>
+                    </div>
+                </div>
+            </div> <!-- end column -->
+            <!--Pakhuis de Zwijger-->
+            <div class="column">
+                <div class="folio-item" data-animate-el>
+                    <div class="folio-item__thumb">
+                        <a class="folio-item__thumb-link" href="images/portfolio/gallery/g-PDZ.gif" title="Music Life" data-size="1050x700">
+                            <img src="images/portfolio/PDZ.jpg"
+                                 srcset="images/portfolio/PDZ.jpg 1x, images/portfolio/PDZ2x.jpg 2x" alt="">
+                        </a>
+                    </div>
+                    <div class="folio-item__info">
+                        <div class="folio-item__cat">Content Creation</div>
+                        <h4 class="folio-item__title">Pakhuis De Zwijger</h4>
+                    </div>
+                    <a href="https://dezwijger.nl/" title="Project Link" class="folio-item__project-link">Project Link</a>
+                    <div class="folio-item__caption">
+                        <p>At Pakhuis de Zwijger I worked as a Social Media Marketer, creating and managing content to engage the online community. My role included photographing and filming events, designing visuals for digital campaigns, supporting website design, and producing video projects that highlighted the organisation’s cultural and social impact. This experience allowed me to combine creativity with communication while working in a vibrant and international environment.</p>
+                    </div>
+                </div>
+            </div> <!-- end column -->
+            <!--SVDS-->
+            <div class="column">
+                <div class="folio-item" data-animate-el>
+                    <div class="folio-item__thumb">
+                        <a class="folio-item__thumb-link" href="images/portfolio/gallery/g-SVDS.jpg" Title="OI Logo" data-size="1050x700">
+                            <img src="images/portfolio/SVDS.jpg"
+                                 srcset="images/portfolio/SVDS.jpg 1x, images/portfolio/SVDS2x.jpg 2x" alt="">
+                        </a>
+                    </div>
+                    <div class="folio-item__info">
+                        <div class="folio-item__cat">VIdeo Project</div>
+                        <h4 class="folio-item__title">Stem van de Stad</h4>
+                    </div>
+                    <a href="https://youtube.com/playlist?list=PLshYN4bhPXaWW5-QdT7AKpABxRZztCluG&feature=shared" title="Project Link" class="folio-item__project-link">Project Link</a>
+                    <div class="folio-item__caption">
+                        <p>
+                            This is the sixth season of Stem van de Stad, a project that takes us through the heart of Amsterdam, capturing the voices of the city. Alongside participants, youth, and experts, we explore relevant topics that shape the city and its residents. Edited and produced this project for Pakhuis de Zwijger, shared in the website and social media platforms.
+                        </p>
+                    </div>
+                </div>
+            </div> <!-- end column -->
+            <!--Freelance-->
+            <div class="column">
+                <div class="folio-item" data-animate-el>
+                    <div class="folio-item__thumb">
+                        <a class="folio-item__thumb-link" href="images/portfolio/gallery/g-JN.jpg" title="Corrugated Sheets" data-size="1050x700">
+                            <img src="images/portfolio/JN.jpg"
+                                 srcset="images/portfolio/JN.jpg 1x, images/portfolio/JN2x.jpg 2x" alt="">
+                        </a>
+                    </div>
+                    <div class="folio-item__info">
+                        <div class="folio-item__cat">Content Creation</div>
+                        <h4 class="folio-item__title">Freelance Projects</h4>
+                    </div>
+                    <a href="https://www.behance.net/joonoronha6" title="Project Link" class="folio-item__project-link">Project Link</a>
+                    <div class="folio-item__caption">
+                        <p>A selection of independent projects developed for different companies and clients, ranging from video production and editing to graphic design, branding and content creation. These works reflect my versatility and ability to adapt to different industries, delivering creative solutions tailored to each client’s needs.</p>
+                    </div>
+                </div>
+            </div> <!-- end column -->
+            <!--Les Marseillais-->
+            <div class="column">
+                <div class="folio-item" data-animate-el>
+                    <div class="folio-item__thumb">
+                        <a class="folio-item__thumb-link" href="images/portfolio/gallery/g-LMVLRDM.jpg" title="Sand Dunes" data-size="1050x700">
+                            <img src="images/portfolio/LMVLRDM.jpg"
+                                 srcset="images/portfolio/LMVLRDM.jpg 1x, images/portfolio/LMVLRDM2x.jpg 2x" alt="">
+                        </a>
+                    </div>
+                    <div class="folio-item__info">
+                        <div class="folio-item__cat">Design & Content Creation</div>
+                        <h4 class="folio-item__title">les marseillais vs le reste du monde 4</h4>
+                    </div>
+                    <a href="https://www.canalplus.com/divertissement/les-marseillais-vs-le-reste-du-monde/h/8946019_50071/saison-4/" title="Project Link" class="folio-item__project-link">
+                        Project Link
+                    </a>
+                    <div class="folio-item__caption">
+                        <p>As part of the art production team for the French reality show Les Marseillais vs le reste du monde 4, I was responsible for designing and executing the set decoration and scenography, creating original artwork to enhance the visual aesthetic of the filming location. I also collaborated on the production of behind-the-scenes videos, supporting the creative process from concept to final execution. This experience gave me the chance to work in an international environment, strengthen my adaptability, and expand my creative practice across multiple mediums.</p>
+                    </div>
+                </div>
+            </div> <!-- end column -->
+            <!--MAAT-->
+            <div class="column">
+                <div class="folio-item" data-animate-el>
+                    <div class="folio-item__thumb">
+                        <a class="folio-item__thumb-link" href="images/portfolio/gallery/g-MAAT.jpg" title="The Lamp" data-size="1050x700">
+                            <img src="images/portfolio/MAAT.jpg"
+                                 srcset="images/portfolio/MAAT.jpg 1x, images/portfolio/MAAT2x.jpg 2x" alt="">
+                        </a>
+                    </div>
+                    <div class="folio-item__info">
+                        <div class="folio-item__cat">Branding</div>
+                        <h4 class="folio-item__title">MAAT</h4>
+                    </div>
+                    <a href="https://maat.pt/" title="Project Link" class="folio-item__project-link">Project Link</a>
+                    <div class="folio-item__caption">
+                        <p>At MAAT I worked closely with the communication and curatorial teams, contributing to marketing and website design, as well as supporting the coordination of exhibitions together with the artists. I developed exhibition scripts, created content for social media, and collaborated on promotional materials to enhance the museum’s public presence. This role allowed me to combine design, communication and cultural production in a dynamic and international environment.</p>
+                    </div>
+                </div>
+            </div> <!-- end column -->
+            <!--ARC-->
+            <div class="column">
+                <div class="folio-item" data-animate-el>
+                    <div class="folio-item__thumb">
+                        <a class="folio-item__thumb-link" href="images/portfolio/gallery/g-ARC.jpg" title="The Lamp" data-size="1050x700">
+                            <img src="images/portfolio/ARC.jpg"
+                                 srcset="images/portfolio/ARC.jpg 1x, images/portfolio/ARC2x.jpg 2x" alt="">
+                        </a>
+                    </div>
+                    <div class="folio-item__info">
+                        <div class="folio-item__cat">Animation</div>
+                        <h4 class="folio-item__title">ARC Watch</h4>
+                    </div>
+                    <a href="https://ei2018.wordpress.com/2018/11/07/projecto-experiencia-da-interaccao/" title="Project Link" class="folio-item__project-link">Project Link</a>
+                    <div class="folio-item__caption">
+                        <p>Through this animation project, I was able to showcase a marketing concept for a product called @ARC watch - Automatic Rescue Caller” and demonstrate the capabilities of human-machine interaction. The animation features a scenario in which a smart watch is able to detect a cardiac emergency in a patient and immediately call for help by contacting an emergency contact. Developing this project allowed me to utilize Adobe Animate and create a compelling and informative piece that highlights the potential of technology to improve and save lives.</p>
+                    </div>
+                </div>
+            </div> <!-- end column -->
+            <!--VR-->
+            <div class="column">
+                <div class="folio-item" data-animate-el>
+                    <div class="folio-item__thumb">
+                        <a class="folio-item__thumb-link" href="images/portfolio/gallery/g-VR.jpg" title="The Lamp" data-size="1050x700">
+                            <img src="images/portfolio/VR.jpg"
+                                 srcset="images/portfolio/VR.jpg 1x, images/portfolio/VR2x.jpg 2x" alt="">
+                        </a>
+                    </div>
+                    <div class="folio-item__info">
+                        <div class="folio-item__cat">Programming & 3D Design</div>
+                        <h4 class="folio-item__title">The VR Gallery</h4>
+                    </div>
+                    <a href="https://joaonoronha.itch.io/the-vr-gallery" title="Project Link" class="folio-item__project-link">Project Link</a>
+                    <div class="folio-item__caption">
+                        <p>In this project, I brought together various previous experiences and projects from my art and multimedia studies, combining curation techniques, virtual modeling, and model-making to create a virtual and physical exhibition. My portfolio of work served as the theme for the show, as it showcases my growth and development as an artist over the course of my studies. I chose to present the exhibition in Virtual Reality, as it is a technology that I find both fascinating and underutilized. To add a human element and maintain a sense of physicality, I also created a reduced scale physical model of the exhibition space. Overall, this project allowed me to demonstrate my skills in curation, modeling, and exhibition design in both virtual and physical realms.</p>
+                    </div>
+                </div>
+            </div> <!-- end column -->
+            <!--Alien-->
+            <div class="column">
+                <div class="folio-item" data-animate-el>
+                    <div class="folio-item__thumb">
+                        <a class="folio-item__thumb-link" href="images/portfolio/gallery/g-Alien.jpg" title="The Lamp" data-size="1050x700">
+                            <img src="images/portfolio/Alien.jpg"
+                                 srcset="images/portfolio/Alien.jpg 1x, images/portfolio/Alien2x.jpg 2x" alt="">
+                        </a>
+                    </div>
+                    <div class="folio-item__info">
+                        <div class="folio-item__cat">Programming & Design</div>
+                        <h4 class="folio-item__title">Alien Invasion</h4>
+                    </div>
+                    <a href="https://joaonoronha.itch.io/alien-invasion" title="Project Link" class="folio-item__project-link">Project Link</a>
+                    <div class="folio-item__caption">
+                        <p>For this project, I created a single-level arcade-inspired game that is meant to evoke a sense of nostalgia. Using the Unity game engine and assets such as Sunny Land and Warped Caves, I developed a game that pays homage to a beloved childhood character with its choice of background music, Sonic: After the Sequel. The result is a nostalgicically charged game that is sure to bring back memories for players of all ages.</p>
+                    </div>
+                </div>
+            </div> <!-- end column -->
+            <!--Mobi-->
+            <div class="column">
+                <div class="folio-item" data-animate-el>
+                    <div class="folio-item__thumb">
+                        <a class="folio-item__thumb-link" href="images/portfolio/gallery/g-mobi.jpg" title="The Lamp" data-size="1050x700">
+                            <img src="images/portfolio/mobi.jpg"
+                                 srcset="images/portfolio/mobi.jpg 1x, images/portfolio/mobi2x.jpg 2x" alt="">
+                        </a>
+                    </div>
+                    <div class="folio-item__info">
+                        <div class="folio-item__cat">Programming</div>
+                        <h4 class="folio-item__title">Mobigreen</h4>
+                    </div>
+                    <a href="https://om202122.wordpress.com/2022/01/09/mobigreen-artigo-final/" title="Project Link" class="folio-item__project-link">Project Link</a>
+                    <div class="folio-item__caption">
+                        <p>As a part of the Workshop and Multimedia course, I worked on a project that involved creating a mobile "Plant" that interacts with its surroundings and competes for access to the highly sought-after resource of light. Using Arduino programming, I brought this concept to life and developed a unique and engaging interactive installation. This project challenged me to think creatively and work with new technology, resulting in a dynamic and memorable piece.</p>
+                    </div>
+                </div>
+            </div> <!-- end column -->
+            <!--Pravda-->
+            <div class="column">
+                <div class="folio-item" data-animate-el>
+                    <div class="folio-item__thumb">
+                        <a class="folio-item__thumb-link" href="images/portfolio/gallery/g-Pravda.jpg" title="The Lamp" data-size="1050x700">
+                            <img src="images/portfolio/Pravda.jpg"
+                                 srcset="images/portfolio/Pravda.jpg 1x, images/portfolio/Pravda2x.jpg 2x" alt="">
+                        </a>
+                    </div>
+                    <div class="folio-item__info">
+                        <div class="folio-item__cat">Programming & 3D Design</div>
+                        <h4 class="folio-item__title">Pravda</h4>
+                    </div>
+                    <a href="https://joaonoronha.itch.io/pravda" title="Project Link" class="folio-item__project-link">Project Link</a>
+                    <div class="folio-item__caption">
+                        <p>For the Systems course, I created “PRAVDA”, an interactive installation that utilizes a playful system of conflict interaction between truth and lies to engage the participants. Using Twitter feeds as a starting point, their mission is to identify the truth and expose the lies in the media, working together to combat disinformation. In order to effectively do so, the participants must develop critical thinking skills and strategize their actions, ultimately striving for a ‘liberating truth’. To bring this project to life, I utilized a range of tools including Blender, Unity, and Virtual Reality software.</p>
+                    </div>
+                </div>
+            </div> <!-- end column -->
+            <!--Photo-->
+            <div class="column">
+                <div class="folio-item" data-animate-el>
+                    <div class="folio-item__thumb">
+                        <a class="folio-item__thumb-link" href="images/portfolio/gallery/g-photo.jpg" title="The Lamp" data-size="1050x700">
+                            <img src="images/portfolio/photo.jpg"
+                                 srcset="images/portfolio/photo.jpg 1x, images/portfolio/photo2x.jpg 2x" alt="">
+                        </a>
+                    </div>
+                    <div class="folio-item__info">
+                        <div class="folio-item__cat">Photography</div>
+                        <h4 class="folio-item__title">Photography Projects</h4>
+                    </div>
+                    <a href="https://joaonoronha.pixieset.com/" title="Project Link" class="folio-item__project-link">Project Link</a>
+                    <div class="folio-item__caption">
+                        <p>A collection of moments, places and stories captured through my lens. My photography explores detail, atmosphere and emotion, often blending documentary perspectives with a creative approach. From portraits and events to urban landscapes and experimental projects, this page gathers the visual narratives I have created over the years.</p>
+                    </div>
+                </div>
+            </div> <!-- end column -->
+            <!--Video-->
+            <div class="column">
+                <div class="folio-item" data-animate-el>
+                    <div class="folio-item__thumb">
+                        <a class="folio-item__thumb-link" href="images/portfolio/gallery/g-video.jpg" title="The Red Wheel" data-size="1050x700">
+                            <img src="images/portfolio/video.jpg"
+                                 srcset="images/portfolio/video.jpg 1x, images/portfolio/video2x.jpg 2x" alt="">
+                        </a>
+                    </div>
+                    <div class="folio-item__info">
+                        <div class="folio-item__cat">Video Editing</div>
+                        <h4 class="folio-item__title">Video Projects</h4>
+                    </div>
+                    <a href="https://youtube.com/playlist?list=PLshYN4bhPXaVWKQfCzXnysgyC3kwHi264&feature=shared" title="Project Link" class="folio-item__project-link">Project Link</a>
+                    <div class="folio-item__caption">
+                        <p>During my work experiences and the multimedia arts course, I undertook several experimental projects that allowed me to apply my video and audio editing skills using Adobe Premiere Pro and Audacity. I created captivating videos and combined them with 2D animations crafted in Adobe Animate. In one of my projects, I explored the creation of sound visuals by using sound waves from a song and a laser. The results were mesmerizing and underscored my creativity and technical proficiency in multimedia arts.</p>
+                    </div>
+                </div>
+            </div> <!-- end column -->
+            <!--Illustration-->
+            <div class="column">
+                <div class="folio-item" data-animate-el>
+                    <div class="folio-item__thumb">
+                        <a class="folio-item__thumb-link" href="images/portfolio/gallery/g-illustration.jpg" title="The Lamp" data-size="1050x700">
+                            <img src="images/portfolio/illustration.jpg"
+                                 srcset="images/portfolio/illustration.jpg 1x, images/portfolio/illustration2x.jpg 2x" alt="">
+                        </a>
+                    </div>
+                    <div class="folio-item__info">
+                        <div class="folio-item__cat">Illustration</div>
+                        <h4 class="folio-item__title">Illustration</h4>
+                    </div>
+                    <a href="https://www.instagram.com/oldschoolcartoon.noronha/" title="Project Link" class="folio-item__project-link">Project Link</a>
+                    <div class="folio-item__caption">
+                        <p>Art has always been a central part of my life, particularly in the realm of cartoons, comic books, and digital drawing. From a young age, I discovered a natural talent for drawing and constantly honed my skills through practice and exploration. Initially, I worked primarily with graphite pencils, focusing on portraits and cartoon illustrations. In college, I had the opportunity to expand my skillset further by taking a course in digital drawing, where I familiarized myself with software such as Illustrator and Photoshop, allowing me to bring my creative vision to life in new and exciting ways.</p>
+                    </div>
+                </div>
+            </div> <!-- end column -->
+
+
+        </div> <!-- folio-list -->
+
+        <div class="row clients-outer" data-animate-block>
+            <div class="column lg-12">
+
+                <h3 class="text-clients-title" data-animate-el>
+                    Tools and software  <br>
+                    I use in my work
+                </h3>
+
+                <div class="swiper-container clients" data-animate-el>
+                    <div class="swiper-wrapper clients__content">
+                        <a href="#0" title="" class="swiper-slide clients__slide"><img src="images/icons/clients/After Effects.svg" /></a>
+                        <a href="#0" title="" class="swiper-slide clients__slide"><img src="images/icons/clients/Animate.svg" /></a>
+                        <a href="#0" title="" class="swiper-slide clients__slide"><img src="images/icons/clients/Illustrator.svg" /></a>
+                        <a href="#0" title="" class="swiper-slide clients__slide"><img src="images/icons/clients/Indesign.svg" /></a>
+                        <a href="#0" title="" class="swiper-slide clients__slide"><img src="images/icons/clients/Lightroom Classic.svg" /></a>
+                        <a href="#0" title="" class="swiper-slide clients__slide"><img src="images/icons/clients/Photoshop.svg" /></a>
+                        <a href="#0" title="" class="swiper-slide clients__slide"><img src="images/icons/clients/Premiere Pro.svg" /></a>
+                        <a href="#0" title="" class="swiper-slide clients__slide"><img src="images/icons/clients/Figma.svg" /></a>
+                        <a href="#0" title="" class="swiper-slide clients__slide"><img src="images/icons/clients/C++.svg" /></a>
+                        <a href="#0" title="" class="swiper-slide clients__slide"><img src="images/icons/clients/Csh.svg" /></a>
+                        <a href="#0" title="" class="swiper-slide clients__slide"><img src="images/icons/clients/Css.svg" /></a>
+                        <a href="#0" title="" class="swiper-slide clients__slide"><img src="images/icons/clients/Html.svg" /></a>
+                        <a href="#0" title="" class="swiper-slide clients__slide"><img src="images/icons/clients/Office.svg" /></a>
+                        <a href="#0" title="" class="swiper-slide clients__slide"><img src="images/icons/clients/Unreal.svg" /></a>
+                        <a href="#0" title="" class="swiper-slide clients__slide"><img src="images/icons/clients/Blender.svg" /></a>
+
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+                </div> <!-- end clients -->
+
+            </div> <!-- end column -->
+        </div> <!-- end clients-outer -->
+        <!--<div class="video-block">
+        <span class="video-block__bg-left"></span>
+        <span class="video-block__bg-right"></span>
+
+        <div class="video-block__content">
+            <a href="https://player.vimeo.com/video/14592941?color=00a650&title=0&byline=0&portrait=0" class="video-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:"><path d="M7 6L7 18 17 12z"></path></svg>
+            </a>
+
+            <p class="video-caption">
+                Watch Video
+            </p>
+        </div>-->
+        </div> <!-- end video-block -->
+        <!--<div class="row testimonials" data-animate-block>
+        <div class="column lg-12">
+
+            <div class="swiper-container testimonial-slider" data-animate-el>
+
+                <div class="swiper-wrapper">
+
+                    <div class="testimonial-slider__slide swiper-slide">
+                        <div class="testimonial-slider__author">
+                            <img src="images/avatars/user-02.jpg" alt="Author image" class="testimonial-slider__avatar">
+                            <cite class="testimonial-slider__cite">
+                                <strong>Tim Cook</strong>
+                                <span>CEO, Apple</span>
+                            </cite>
+                        </div>
+                        <p>
+                            Molestiae incidunt consequatur quis ipsa autem nam sit enim magni. Voluptas tempore rem.
+                            Explicabo a quaerat sint autem dolore ducimus ut consequatur neque. Nisi dolores quaerat fuga rem nihil nostrum.
+                            Laudantium quia consequatur molestias.
+                        </p>
+                    </div>-->
+        <!-- end testimonial-slider__slide -->
+        <!--<div class="testimonial-slider__slide swiper-slide">
+        <div class="testimonial-slider__author">
+            <img src="images/avatars/user-03.jpg" alt="Author image" class="testimonial-slider__avatar">
+            <cite class="testimonial-slider__cite">
+                <strong>Sundar Pichai</strong>
+                <span>CEO, Google</span>
+            </cite>
+        </div>
+        <p>
+            Excepturi nam cupiditate culpa doloremque deleniti repellat. Veniam quos repellat voluptas animi adipisci.
+            Nisi eaque consequatur. Voluptatem dignissimos ut ducimus accusantium perspiciatis.
+            Quasi voluptas eius distinctio. Atque eos maxime.
+        </p>
+    </div>-->
+        <!-- end testimonial-slider__slide -->
+        <!--<div class="testimonial-slider__slide swiper-slide">
+        <div class="testimonial-slider__author">
+            <img src="images/avatars/user-01.jpg" alt="Author image" class="testimonial-slider__avatar">
+            <cite class="testimonial-slider__cite">
+                <strong>Satya Nadella</strong>
+                <span>CEO, Microsoft</span>
+            </cite>
+        </div>
+        <p>
+            Repellat dignissimos libero. Qui sed at corrupti expedita voluptas odit. Nihil ea quia nesciunt. Ducimus aut sed ipsam.
+            Autem eaque officia cum exercitationem sunt voluptatum accusamus. Quasi voluptas eius distinctio.
+            Voluptatem dignissimos ut.
+        </p>
+    </div>-->
+        <!-- end testimonial-slider__slide -->
+        <!--<div class="testimonial-slider__slide swiper-slide">
+        <div class="testimonial-slider__author">
+            <img src="images/avatars/user-06.jpg" alt="Author image" class="testimonial-slider__avatar">
+            <cite class="testimonial-slider__cite">
+                <strong>Jeff Bezos</strong>
+                <span>CEO, Amazon</span>
+            </cite>
+        </div>
+        <p>
+            Nunc interdum lacus sit amet orci. Vestibulum dapibus nunc ac augue. Fusce vel dui. In ac felis
+            quis tortor malesuada pretium. Curabitur vestibulum aliquam leo. Qui sed at corrupti expedita voluptas odit.
+            Nihil ea quia nesciunt. Ducimus aut sed ipsam.-->
+        </p>
+        </div> <!-- end testimonial-slider__slide -->
+        </div> <!-- end swiper-wrapper -->
+
+        <div class="swiper-pagination"></div>
+
+        </div> <!-- end swiper-container -->
+        </div> <!-- end column -->
+        </div> <!-- end row testimonials -->
+
+    </section> <!-- end s-works -->
+
+
+        <!-- # services
+    ================================================== -->
+        <section id="services" class="s-services target-section">
+
+            <div class="row section-header has-bottom-sep">
+                <div class="column lg-12">
+                    <h3 class="text-pretitle">What I Do</h3>
+                    <h1 class="text-display-title">
+                        Here are some of <br>
+                        the key areas <br>
+                        I specialize in
+                    </h1>
+                </div>
+            </div> <!-- end section-header -->
+
+            <div class="row services-list block-lg-one-half block-tab-whole" data-animate-block>
+
+                <div class="column service-item" data-animate-el>
+                    <div class="service-icon-block">
+                        <span class="service-icon service-icon--product-design"></span>
+                    </div>
+                    <div class="service-text">
+                        <h3 class="h4">Product Design</h3>
+                        <p>
+                            I create digital products that balance functionality with aesthetic appeal, always placing the user at the center
+                            of the process. My approach combines design thinking, prototyping and iteration to ensure usability and
+                            accessibility. I work mainly with Figma and Adobe XD to deliver intuitive and engaging product experiences.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="column service-item" data-animate-el>
+                    <div class="service-icon-block">
+                        <span class="service-icon service-icon--branding"></span>
+                    </div>
+                    <div class="service-text">
+                        <h3 class="h4">Branding</h3>
+                        <p>
+                            I develop strong and consistent brand identities that communicate the values and personality of a business. From logo design to color systems and typography, I build visual languages that make brands stand out. Using tools like Illustrator, InDesign and Photoshop, I craft assets that work across print and digital.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="column service-item" data-animate-el>
+                    <div class="service-icon-block">
+                        <span class="service-icon service-icon--frontend"></span>
+                    </div>
+                    <div class="service-text">
+                        <h3 class="h4">Video Editing</h3>
+                        <p>
+                            I produce video content that tells stories in a dynamic and professional way, from event highlights to promotional campaigns. My process includes editing, sound design and motion graphics to create an impactful final product. I work with Premiere Pro, After Effects and Audacity to ensure polished and creative results.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="column service-item" data-animate-el>
+                    <div class="service-icon-block">
+                        <span class="service-icon service-icon--research"></span>
+                    </div>
+                    <div class="service-text">
+                        <h3 class="h4">UX Research</h3>
+                        <p>
+                            I conduct user research to uncover insights that improve digital products, focusing on usability testing, interviews and user flows. These findings inform design decisions and ensure solutions meet real needs. With Figma, Notion and prototyping tools, I structure and document processes that support better user experiences.
+                    </div>
+                </div>
+
+                <div class="column service-item" data-animate-el>
+                    <div class="service-icon-block">
+                        <span class="service-icon service-icon--illustration"></span>
+                    </div>
+                    <div class="service-text">
+                        <h3 class="h4">Illustration</h3>
+                        <p>
+                            I create original illustrations that bring projects to life, whether for branding, editorial or digital interfaces. My style adapts to each project, from expressive drawings to clean vector artwork. Using Photoshop, Illustrator and Procreate, I develop visuals that add character and clarity to communication.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="column service-item" data-animate-el>
+                    <div class="service-icon-block">
+                        <span class="service-icon service-icon--ecommerce"></span>
+                    </div>
+                    <div class="service-text">
+                        <h3 class="h4">Photography</h3>
+                        <p>
+                            I capture stories through photography, documenting events, creating portraits and exploring urban and creative projects. My goal is to combine technical quality with atmosphere and authenticity in each image. I shoot with DSLR and mirrorless cameras, and edit in Lightroom and Photoshop to achieve professional results.
+                        </p>
+                    </div>
+                </div>
+                <a class="btn btn--stroke u-fullwidth" href="https://drive.google.com/file/d/1IE2nv_eGJdY1nZwvDPftoGZHS8pJO1Uu/view">Download CV</a>
+            </div> <!-- end services-list -->
+
+        </section> <!-- end s-services -->
+
+        <!-- ## contact
+    ================================================== -->
+        <section id="contact" class="s-contact target-section">
+
+            <div class="row section-header section-header--dark" ">
+                <div class="column lg-12">
+                    <h3 class="text-pretitle">Get In Touch</h3>
+                    <h1 class="text-display-title">
+                        Do you have an idea or an epic project in mind? Let’s work together.
+                    </h1>
+                </div>
+            </div>
+
+            <div class="row row-x-center text-center s-contact__content">
+                <div class="column lg-12">
+                    <!--<p class="lead">
+                        Nunc interdum lacus sit amet orci. Vestibulum dapibus nunc ac augue. Fusce vel dui. In ac felis
+                        quis tortor malesuada pretium. Curabitur vestibulum aliquam leo. Quasi sed at voluptas corrupti eius distinctio.
+                    </p>-->
+                    <div class="btn-wrap">
+                        <a href="mailto:joaonoronhabarros@gmail.com" class="btn btn--primary">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:"><path d="M20,4H4C2.897,4,2,4.897,2,6v12c0,1.103,0.897,2,2,2h16c1.103,0,2-0.897,2-2V6C22,4.897,21.103,4,20,4z M20,6v0.511 l-8,6.223L4,6.512V6H20z M4,18V9.044l7.386,5.745C11.566,14.93,11.783,15,12,15s0.434-0.07,0.614-0.211L20,9.044L20.002,18H4z"></path></svg>
+                            Write An Email
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="s-footer">
+
+                <div class="row s-footer__top">
+                    <div class="column lg-5 md-8 stack-on-700 s-footer__block contact-address">
+                        <h4 class="h6">Where to Find Me</h4>
+
+                        <p>
+                            Vinkengurgstraat 15 <br>
+                            Utrecht, Netherlands <br>
+                            3512AA
+                        </p>
+                    </div>
+
+                    <div class="column lg-3 md-4 stack-on-700 s-footer__block contact-social">
+                        <h4 class="h6">Follow Me</h4>
+
+                        <ul class="contact-list">
+                            <li><a href="https://www.linkedin.com/in/joaonoronhabarros/">LinkedIn</a></li>
+                            <li><a href="https://www.youtube.com/@joaonoronhabarros">Youtube</a></li>
+                            <li><a href="https://www.instagram.com/oldschoolcartoon.noronha/">Instagram</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="column lg-3 md-12 s-footer__block contact-number">
+                        <h4 class="h6">Contact Me</h4>
+
+                        <ul class="contact-list">
+                            <li><a href="mailto:#0">joaonoronhabarros@gmail.com</a></li>
+                            <li><a href="tel:351-911-974-856">+351 911 974 856</a></li>
+                            <!--<li><a href="tel:197-123-9876">+197 123 9876</a></li>-->
+                        </ul>
+                    </div>
+                </div> <!-- end s-footer__top -->
+
+                <div class="row s-footer__bottom">
+                    <div class="column ss-copyright">
+                        <span>© Copyright João Noronha 2025</span>
+                        <span>Design by <a href="https://www.styleshout.com/">StyleShout</a></span>
+                    </div>
+
+                    <div class="ss-go-top">
+                        <a class="smoothscroll" title="Back to Top" href="#top">
+                            <span class="ss-go-top__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:rotate(90deg);-ms-filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=1)"><path d="M6 4H18V6H6zM11 14L11 20 13 20 13 14 18 14 12 8 6 14z"></path></svg>
+                            </span>
+                            <span class="ss-go-top__text">Back to Top</span>
+                        </a>
+                    </div>
+                </div> <!-- end s-footer__top -->
+
+            </footer>
+
+        </section> <!-- end s-contact -->
+
+    </div> <!-- end -s-pagewrap -->
+
+
+    <!-- photoswipe background
+    ================================================== -->
+    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+
+        <div class="pswp__bg"></div>
+        <div class="pswp__scroll-wrap">
+
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <div class="pswp__counter"></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button> <button class="pswp__button pswp__button--share" title=
+                    "Share"></button> <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom" title=
+                    "Zoom in/out"></button>
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button> <button class="pswp__button pswp__button--arrow--right" title=
+                "Next (arrow right)"></button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div> <!-- end photoSwipe background -->
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
