@@ -18,20 +18,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "styles.css",
-              "DocumentMoniker": "D:\\Site\\JohnNoronha.github.io\\css\\styles.css",
-              "RelativeDocumentMoniker": "css\\styles.css",
-              "ToolTip": "D:\\Site\\JohnNoronha.github.io\\css\\styles.css",
-              "RelativeToolTip": "css\\styles.css",
-              "ViewState": "AgIAAM4HAAAAAAAAAAAWwNkHAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-09-29T19:14:13.67Z"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -44,6 +32,18 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2025-09-29T14:46:11.825Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "styles.css",
+              "DocumentMoniker": "D:\\Site\\JohnNoronha.github.io\\css\\styles.css",
+              "RelativeDocumentMoniker": "css\\styles.css",
+              "ToolTip": "D:\\Site\\JohnNoronha.github.io\\css\\styles.css",
+              "RelativeToolTip": "css\\styles.css",
+              "ViewState": "AgIAAM4HAAAAAAAAAAAWwNkHAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-09-29T19:14:13.67Z"
             }
           ]
         }
