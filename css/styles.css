@@ -2007,7 +2007,7 @@ label>input[type="radio"] {
     color : var(--color-placeholder);
 }
 
-::-ms-input-placeholder {
+:-ms-input-placeholder {
     /* Microsoft Edge */
     color : var(--color-placeholder);
 }
