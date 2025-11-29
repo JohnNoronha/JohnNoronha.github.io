@@ -3592,7 +3592,7 @@ img.u-pull-left {
 }
 
 .service-icon--ecommerce {
-    background-image: url(../images/icons/services/Photography.svg);
+    background-image: url(../images/icons/services/AI.svg);
 }
 
 /* ------------------------------------------------------------------- 
@@ -4296,4 +4296,9 @@ img.u-pull-left {
         height : var(--vspace-1_25);
         width  : var(--vspace-1_25);
     }
+}
+
+/* Custom spacing for image and video block */
+.images-block {
+    margin-bottom: 4rem;
 }
